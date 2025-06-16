@@ -29,7 +29,7 @@ if 'GITHUB_RUN_ID' in os.environ and 'GITHUB_RUN_ATTEMPT' in os.environ:
     version = f"1.{run_id}.{run_attempt}"
 
 setup(
-    name='bitbucket-cli',
+    name='python-bitbucket-cli',
     version=version,
     author='Md Minhazul Haque',
     author_email='mdminhazulhaque@gmail.com',
