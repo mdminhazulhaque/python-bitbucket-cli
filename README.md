@@ -28,10 +28,10 @@ cd python-bitbucket-cli
 pip install -e .
 ```
 
-### From PyPI (Coming Soon)
+### From PyPI
 
 ```bash
-pip install bitbucket-cli
+pip install python-bitbucket-cli
 ```
 
 ## 🔐 Authentication
@@ -270,17 +270,8 @@ fi
 git clone https://github.com/mdminhazulhaque/python-bitbucket-cli.git
 cd python-bitbucket-cli
 
-# Install development dependencies
-make install-dev
-
-# Run tests
-make test
-
-# Format code
-make format
-
-# Run linting
-make lint
+# Install the package
+make install
 ```
 
 ### Project Structure
@@ -291,9 +282,7 @@ python-bitbucket-cli/
 │   ├── __init__.py
 │   ├── bitbucket.py    # Core API client
 │   └── main.py         # CLI interface
-├── tests/
 ├── requirements.txt
-├── requirements-dev.txt
 ├── setup.py
 ├── Makefile
 ├── LICENSE
@@ -319,11 +308,9 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
-4. Run tests (`make test`)
-5. Format code (`make format`)
-6. Commit your changes (`git commit -m 'Add amazing feature'`)
-7. Push to the branch (`git push origin feature/amazing-feature`)
-8. Open a Pull Request
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
 ## 📝 License
 
