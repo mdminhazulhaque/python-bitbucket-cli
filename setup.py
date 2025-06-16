@@ -23,10 +23,9 @@ else:
 
 # Get version from GitHub Actions environment variables if available
 version = '1.0.0'  # Default version
-if 'GITHUB_RUN_ID' in os.environ and 'GITHUB_RUN_ATTEMPT' in os.environ:
-    run_id = os.environ.get('GITHUB_RUN_ID')
-    run_attempt = os.environ.get('GITHUB_RUN_ATTEMPT')
-    version = f"1.{run_id}.{run_attempt}"
+if 'GITHUB_RUN_NUMBER' in os.environ:
+    run_number = os.environ.get('GITHUB_RUN_NUMBER')
+    version = f"1.{run_number}.0"
 
 setup(
     name='python-bitbucket-cli',

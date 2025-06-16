@@ -1,6 +1,8 @@
 name: Upload Python Package
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 jobs:
   release-build:
     runs-on: ubuntu-latest
